@@ -1,24 +1,20 @@
-nodejs Cookbook
+Hackademy Cookbook
 ===============
-TODO: Enter the cookbook description here.
+Collected things helpful for deploying code and running
+chef-solo on the commandline
 
-e.g.
-This cookbook makes your favorite breakfast sandwhich.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
+This cookbook built for Dyn Hackademy, May 2013
 
-e.g.
-#### packages
-- `toaster` - nodejs needs toaster to brown your bagel.
+Works on nodes that were explicitly built for Hackademy.
+See setup.rb for pre-reqs
 
 Attributes
 ----------
-TODO: List you cookbook attributes here.
 
-e.g.
-#### nodejs::default
+
 <table>
   <tr>
     <th>Key</th>
@@ -27,29 +23,17 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['nodejs']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
+    <td><tt>['hackademy']['gitrepo']</tt></td>
+    <td>String</td>
+    <td>URL of your git repo</td>
+    <td><tt>git://github.com/lnxchk/hackademy.git</tt></td>
   </tr>
 </table>
 
 Usage
 -----
-#### nodejs::default
-TODO: Write usage instructions for each cookbook.
 
-e.g.
-Just include `nodejs` in your node's `run_list`:
 
-```json
-{
-  "name":"my_node",
-  "run_list": [
-    "recipe[nodejs]"
-  ]
-}
-```
 
 Contributing
 ------------
@@ -65,4 +49,4 @@ e.g.
 
 License and Authors
 -------------------
-Authors: TODO: List authors
+Authors: lnxchk
