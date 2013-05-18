@@ -47,7 +47,8 @@ Attributes
 Usage
 -----
 
-* git clone this repo into your ubuntu home directory on your VM: git clone git://github.com/lnxchk/hackademy.git
+* git clone this repo into your ubuntu home directory on your VM: 
+    # git clone git://github.com/lnxchk/hackademy.git cookbooks
 * set your values in hackademy/attributes/default.rb
 * run chef-solo with the configs provided in this repo
 * chef-solo -c ~/solo.rb -j ~/node.json
