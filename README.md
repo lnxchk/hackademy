@@ -11,6 +11,14 @@ This cookbook built for Dyn Hackademy, May 2013
 Works on nodes that were explicitly built for Hackademy.
 See setup.rb for pre-reqs
 
+
+Recipes
+-------
+
+* default.rb - includes deploy.rb
+* deploy.rb - syncs a local repo for downloading code to the VM
+* setup.rb - documents pre-reqs on the systems
+
 Attributes
 ----------
 
@@ -39,9 +47,10 @@ Attributes
 Usage
 -----
 
+* git clone this repo into your ubuntu home directory on your VM: git clone git://github.com/lnxchk/hackademy.git
 * set your values in hackademy/attributes/default.rb
 * run chef-solo with the configs provided in this repo
-** chef-solo -c ~/solo.rb -j ~/node.json
+* chef-solo -c ~/solo.rb -j ~/node.json
 
 Contributing
 ------------
