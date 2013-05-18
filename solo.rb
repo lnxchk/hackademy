@@ -1,2 +1,2 @@
 file_cache_path "/var/chef-solo"
-cookbook_path "/home/ubuntu/cookbooks"
+cookbook_path "~/cookbooks/"
