@@ -52,6 +52,7 @@ Usage
 * set your values in hackademy/attributes/default.rb
 * run chef-solo with the configs provided in this repo
     - sudo chef-solo -c ~/cookbooks/hackademy/solo.rb -j ~/cookbooks/hackademy/node.json
+* if you have an error about "cannot find cookbooks at ~/cookbooks", change the value in solo.rb to match your git clone location
 
 Contributing
 ------------
