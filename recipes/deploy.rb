@@ -15,4 +15,5 @@ git node['hackademy']['deploydir'] do
   repository node['hackademy']['gitrepo']
   reference "master"
   action :sync
+  depth 1
 end
