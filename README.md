@@ -51,7 +51,7 @@ Usage
     - git clone git://github.com/lnxchk/hackademy.git cookbooks/hackademy
 * set your values in hackademy/attributes/default.rb
 * run chef-solo with the configs provided in this repo
-* chef-solo -c ~/solo.rb -j ~/node.json
+    - sudo chef-solo -c ~/solo.rb -j ~/node.json
 
 Contributing
 ------------
