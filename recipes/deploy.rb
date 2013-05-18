@@ -1,9 +1,18 @@
+# deploy.rb
+#
 
-directory "/usr/local/app" do
+# create the directory for your code to live in
+# Set this value in hackademy/attributes/default.rb
+#
+directory node['hackademy']['deploydir'] do
 
 end
-git "/usr/local/app" do
-  repository "git://github.com/lnxchk/junque.git"
+
+
+# the gitrepo to sync your code from
+# Set this value in hackademy/attributes/default.rb
+git node['hackademy']['deploydir'] do
+  repository node['hackademy']['gitrepo']
   reference "master"
   action :sync
 end

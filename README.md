@@ -28,12 +28,20 @@ Attributes
     <td>URL of your git repo</td>
     <td><tt>git://github.com/lnxchk/hackademy.git</tt></td>
   </tr>
+  <tr>
+    <td><tt>['hackademy']['deploydir']</tt></td>
+    <td>String</td>
+    <td>Destination for your code on the VM</td>
+    <td><tt>/usr/local/app</tt></td>
+  </tr>
 </table>
 
 Usage
 -----
 
-
+* set your values in hackademy/attributes/default.rb
+* run chef-solo with the configs provided in this repo
+** chef-solo -c ~/solo.rb -j ~/node.json
 
 Contributing
 ------------
